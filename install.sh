@@ -3,7 +3,13 @@ apt update -y
 apt install keyboard-configuration tzdata -y
 apt install sudo wget dialog -y
 apt install libexo-2-0 -y
+apt install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm
 apt install tigervnc-standalone-server wget nano dbus-x11 xorg feh xfce4-terminal pcmanfm tigervnc-common -y
+cd /usr/local/src
+wget http://dl.suckless.org/dwm/dwm-6.2.tar.gz
+tar xvzf dwm-6.2.tar.gz
+chown -R `id -u`:`id -g` dwm-6.2
+cd
 clear
 
 mkdir -p ~/.vnc
@@ -19,10 +25,10 @@ dbus-launch dwm
 feh --bg-fill /usr/share/wallpaper.jpg" > ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 
-wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/APT/LXDE/vncserver-start -O /usr/local/bin/vncserver-start
-wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/APT/LXDE/vncserver-stop -O /usr/local/bin/vncserver-stop
-chmod +x /usr/local/bin/vncserver-start
-chmod +x /usr/local/bin/vncserver-stop
+wget https://raw.githubusercontent.com/Tutojay/dwm-ubuntu-termux/master/vnc/vncstart -O /usr/local/bin/vncstart
+wget https://raw.githubusercontent.com/Tutojay/dwm-ubuntu-termux/master/vnc/vncstop -O /usr/local/bin/vncstop
+chmod +x /usr/local/bin/vncstart
+chmod +x /usr/local/bin/vncstop
 
 
 echo "You can now start vncserver by running vncserver-start"
@@ -45,4 +51,4 @@ echo ""
 echo ""
 
 vncpasswd
-vncserver-start
+vncstart
