@@ -3,8 +3,7 @@ Cara install dwm di Ubuntu termux
 
 <h1>command instalasi</h1>
 <p>Pertama kita ketikan command</p>
-<div class=highlight><pre style=color:#f8f8f2;background-color:#272822><code class=language-sh data-lang=sh><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"></span>apt update -y && apt upgrade -y
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"></span>apt update
+<div class=highlight><pre style=color:#f8f8f2;background-color:#272822><code class=language-sh data-lang=sh><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"></span>apt update -y
 <span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"></span>apt install sudo wget
 <span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"></span>adduser (nama-user)
 <span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"></span>echo "nama-user   ALL=(ALL:ALL) ALL" >> /etc/sudoers
