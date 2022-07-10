@@ -4,7 +4,7 @@ sudo apt install keyboard-configuration tzdata -y
 sudo apt install sudo wget dialog -y
 sudo apt install libexo-2-0 -y
 sudo apt install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm
-sudo apt install tigervnc-standalone-server wget nano dbus-x11 xorg feh xfce4-terminal pcmanfm tigervnc-common -y
+sudo apt install tigervnc-standalone-server wget nano dbus-x11 xorg feh tigervnc-common -y
 cd /usr/local/src
 wget http://dl.suckless.org/dwm/dwm-6.2.tar.gz
 tar xvzf dwm-6.2.tar.gz
