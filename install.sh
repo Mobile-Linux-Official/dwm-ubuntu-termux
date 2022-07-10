@@ -9,6 +9,8 @@ cd /usr/local/src
 wget http://dl.suckless.org/dwm/dwm-6.2.tar.gz
 tar xvzf dwm-6.2.tar.gz
 chown -R `id -u`:`id -g` dwm-6.2
+cd dwm-6.2/
+sudo make clean install
 cd
 clear
 
