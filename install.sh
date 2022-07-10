@@ -27,8 +27,8 @@ dbus-launch dwm
 feh --bg-fill /usr/share/wallpaper.jpg" > ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 
-wget https://raw.githubusercontent.com/Tutojay/dwm-ubuntu-termux/master/vnc/vncstart -O /usr/local/bin/vncstart
-wget https://raw.githubusercontent.com/Tutojay/dwm-ubuntu-termux/master/vnc/vncstop -O /usr/local/bin/vncstop
+wget https://raw.githubusercontent.com/Mobile-Linux-Official/dwm-ubuntu-termux/master/vnc/vncstart -O /usr/local/bin/vncstart
+wget https://raw.githubusercontent.com/Mobile-Linux-Official/dwm-ubuntu-termux/master/vnc/vncstop -O /usr/local/bin/vncstop
 chmod +x /usr/local/bin/vncstart
 chmod +x /usr/local/bin/vncstop
 
