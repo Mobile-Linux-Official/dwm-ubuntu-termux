@@ -53,4 +53,3 @@ echo ""
 echo ""
 
 vncpasswd
-vncstart
